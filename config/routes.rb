@@ -1,12 +1,5 @@
 Rails.application.routes.draw do
-  get 'book/index'
-  get 'book/new'
-  post 'book/create'
-  patch 'book/update'
-  get 'book/list'
-  get 'book/show'
-  get 'book/edit'
-  get 'book/delete'
-  get 'book/update'
-  get 'book/show_subjects'
+  resources :books do
+    get 'show_subjects'
+  end
 end

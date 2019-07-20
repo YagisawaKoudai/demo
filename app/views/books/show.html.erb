@@ -8,7 +8,7 @@
 
 <p><%= @book.description %></p>
 
-<button><%= link_to "Edit", {:action => 'edit', :id => @book.id} %></button>
+<button><%= link_to "Edit", edit_book_path(@book) %></button>
 <hr/>
 
-<%= link_to 'Back', {:action => 'index'} %>
+<%= link_to 'Back', books_path %>

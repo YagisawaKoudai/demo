@@ -1,4 +1,4 @@
-class BookController < ApplicationController
+class BooksController < ApplicationController
   def index
     @books = Book.all
   end
@@ -44,7 +44,6 @@ class BookController < ApplicationController
     redirect_to action: 'index'
   end
 
-  :private
   def book_params
     params.require(:books).permit(:title, :price, :subject_id, :description)
   end
