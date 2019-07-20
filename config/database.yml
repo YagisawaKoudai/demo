@@ -6,6 +6,7 @@
 #
 default: &default
   adapter: mysql2
+  encoding: utf8
   database: library_development
   username: root
   password: ''

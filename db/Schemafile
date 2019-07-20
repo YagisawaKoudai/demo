@@ -1,0 +1,12 @@
+create_table "subjects", unsigned: true, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  t.string	"name"
+end
+
+create_table "books", unsigned: true, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  t.string	"title",	null: false, limit: 32
+  t.float	"price"
+  t.bigint	"subject_id"
+  t.text	"description"
+  t.datetime	"created_at",	null: false
+  t.datetime	"updated_at",	null: false
+end
