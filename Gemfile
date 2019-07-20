@@ -39,6 +39,11 @@ gem 'jbuilder', '~> 2.5'
 # ridgepole
 gem 'ridgepole'
 
+# rubocop
+gem 'rubocop', require: false
+gem 'rubocop-performance'
+gem 'rubocop-rails'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
@@ -67,11 +72,6 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
-
-  # for debug
-  gem 'pry-rails'
-  gem 'pry-byebug'
-  gem 'pry-doc'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

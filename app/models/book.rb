@@ -1,5 +1,5 @@
 class Book < ApplicationRecord
   belongs_to :subject
   validates_presence_of :title
-  validates_numericality_of :price, :message=>"Not Numeric"
+  validates_numericality_of :price, message: 'Not Numeric'
 end
